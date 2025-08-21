@@ -1,0 +1,14 @@
+{
+  "name": "Hacking VPS",
+  "build": { "dockerfile": "Dockerfile" },
+  "postCreateCommand": "mkdir -p scripts configs wordlists outputs",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker"],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "remoteUser": "root"
+}
